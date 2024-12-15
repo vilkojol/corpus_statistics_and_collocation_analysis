@@ -152,11 +152,11 @@ def word_count_statistics(utterances):
     return filtered_data
 
 #Initialize the file paths
-base_path = r"C:\Users\Käyttäjä\.convokit\downloads"
-subfolder = "subreddit-AskAnAmerican"
+base_path = r"C:\Users\"
+subfolder = "subreddit-"
 file = "utterances.jsonl"
-output_subfolder = "final_files"
-output_file = "All.txt"
+output_subfolder = ""
+output_file = ".txt"
 
 #These can be run everytime, but input_path_initializer only needed for the initial downloading
 full_path = input_path_initializer(base_path, subfolder, file=file)
@@ -190,16 +190,16 @@ print("Keywords and utterances counted")
 #print("Oldest date:", oldest_date.strftime('%Y-%m-%d'))
 
 #For combining files, remember to edit the output_file_path aswell
-file_paths = [r"C:\Users\Käyttäjä\.convokit\downloads\final_files\USHistory.txt", 
-              r"C:\Users\Käyttäjä\.convokit\downloads\final_files\scotus.txt", 
-              r"C:\Users\Käyttäjä\.convokit\downloads\final_files\usanews.txt",  
-              r"C:\Users\Käyttäjä\.convokit\downloads\final_files\AmericanPolitics.txt", 
-              r"C:\Users\Käyttäjä\.convokit\downloads\final_files\uscg.txt", 
-              r"C:\Users\Käyttäjä\.convokit\downloads\final_files\usa.txt", 
-              r"C:\Users\Käyttäjä\.convokit\downloads\final_files\uspolitics.txt", 
-              r"C:\Users\Käyttäjä\.convokit\downloads\final_files\ussoccer.txt", 
-              r"C:\Users\Käyttäjä\.convokit\downloads\final_files\USMC.txt", 
-              r"C:\Users\Käyttäjä\.convokit\downloads\final_files\AskAnAmerican.txt"]
+file_paths = [r"C:\Users\.txt", 
+              r"C:\Users\.txt", 
+              r"C:\Users\.txt",  
+              r"C:\Users\.txt", 
+              r"C:\Users\.txt", 
+              r"C:\Users\.txt", 
+              r"C:\Users\.txt", 
+              r"C:\Users\.txt", 
+              r"C:\Users\.txt", 
+              r"C:\Users\.txt"]
 #For combining the files of individual subreddits into one file
 #combine_files(file_paths, output_full_path)
 
